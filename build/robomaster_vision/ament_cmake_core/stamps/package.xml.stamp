@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>robomaster_vision</name>
+  <version>0.0.1</version>
+  <description>ROS 2 package for OpenCV-based vision processing</description>
+  <maintainer email="your_email@todo.todo">Your Name</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- 构建工具依赖 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- 运行时和编译依赖 -->
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>OpenCV</depend>
+
+  <!-- 可选：如果要使用 C++14/17/20，或者其他库 -->
+  <!--
+  <depend>image_transport</depend>
+  <depend>image_geometry</depend>
+  <depend>message_filters</depend>
+  -->
+
+  <!-- 测试相关依赖 -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

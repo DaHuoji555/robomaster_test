@@ -1,0 +1,4 @@
+source;share/robomaster_vision/local_setup.bash
+source;share/robomaster_vision/local_setup.dsv
+source;share/robomaster_vision/local_setup.sh
+source;share/robomaster_vision/local_setup.zsh
