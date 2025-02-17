@@ -2,6 +2,7 @@
 /home/lyl/robomaster/build/robomaster_vision/CMakeFiles/robomaster_vision_uninstall.dir
 /home/lyl/robomaster/build/robomaster_vision/CMakeFiles/video_publisher.dir
 /home/lyl/robomaster/build/robomaster_vision/CMakeFiles/image_processor.dir
+/home/lyl/robomaster/build/robomaster_vision/CMakeFiles/predictor_node.dir
 /home/lyl/robomaster/build/robomaster_vision/CMakeFiles/result_display.dir
 /home/lyl/robomaster/build/robomaster_vision/CMakeFiles/test.dir
 /home/lyl/robomaster/build/robomaster_vision/CMakeFiles/edit_cache.dir

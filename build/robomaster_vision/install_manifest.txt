@@ -1,5 +1,6 @@
 /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/video_publisher
 /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/image_processor
+/home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/predictor_node
 /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/result_display
 /home/lyl/robomaster/install/robomaster_vision/share/ament_index/resource_index/package_run_dependencies/robomaster_vision
 /home/lyl/robomaster/install/robomaster_vision/share/ament_index/resource_index/parent_prefix_path/robomaster_vision

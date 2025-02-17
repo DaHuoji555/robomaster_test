@@ -55,6 +55,10 @@ vector<vector<Point2f>> Light::light_match(vector<Light>& lights, Mat& frame) {
                 continue; // 跳过当前配对
             }
 
+            if (abs(light1.realArea - light2.realArea) > 200){
+                continue;
+            }
+
             // 计算中心点连线向量
             Point2f centerVector = light2.rect.center - light1.rect.center;
 

@@ -1,0 +1,178 @@
+[0.000000] (-) TimerEvent: {}
+[0.000393] (robomaster_vision) JobQueued: {'identifier': 'robomaster_vision', 'dependencies': OrderedDict()}
+[0.000566] (robomaster_vision) JobStarted: {'identifier': 'robomaster_vision'}
+[0.004565] (robomaster_vision) JobProgress: {'identifier': 'robomaster_vision', 'progress': 'cmake'}
+[0.004777] (robomaster_vision) Command: {'cmd': ['/usr/bin/cmake', '/home/lyl/robomaster/src/robomaster_vision', '-DCMAKE_INSTALL_PREFIX=/home/lyl/robomaster/install/robomaster_vision'], 'cwd': '/home/lyl/robomaster/build/robomaster_vision', 'env': OrderedDict([('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'lyl'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/local/cuda-12.2/lib64'), ('HOME', '/home/lyl'), ('OLDPWD', '/home/lyl'), ('LESS', '-R'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ZSH', '/home/lyl/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '2430'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('https_proxy', 'http://127.0.0.1:7897/'), ('ROS_DISTRO', 'humble'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lyl'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'lyl'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lyl/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lyl/.local/share/JetBrains/Toolbox/scripts:/usr/local/cuda-12.2/bin'), ('SESSION_MANAGER', 'local/lyl-Legion-Y9000P-IRX8:@/tmp/.ICE-unix/2403,unix/lyl-Legion-Y9000P-IRX8:/tmp/.ICE-unix/2403'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6adbe9f4_aa6e_4ef9_a6f2_411abd923a4a'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.168'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('CONDA_PYTHON_EXE', '/home/lyl/anaconda3/bin/python'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lyl/robomaster/build/robomaster_vision'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('_P9K_TTY', '/dev/pts/0'), ('CONDA_EXE', '/home/lyl/anaconda3/bin/conda'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.050786] (robomaster_vision) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.100076] (-) TimerEvent: {}
+[0.112600] (robomaster_vision) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.116882] (robomaster_vision) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200274] (-) TimerEvent: {}
+[0.202636] (robomaster_vision) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.206386] (robomaster_vision) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.206547] (robomaster_vision) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.206745] (robomaster_vision) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.208368] (robomaster_vision) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300512] (-) TimerEvent: {}
+[0.317478] (robomaster_vision) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.321262] (robomaster_vision) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.321429] (robomaster_vision) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.321582] (robomaster_vision) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.322447] (robomaster_vision) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400754] (-) TimerEvent: {}
+[0.428267] (robomaster_vision) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.472671] (robomaster_vision) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.489122] (robomaster_vision) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.490969] (robomaster_vision) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.494377] (robomaster_vision) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.499339] (robomaster_vision) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.500957] (-) TimerEvent: {}
+[0.505950] (robomaster_vision) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.523751] (robomaster_vision) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.524739] (robomaster_vision) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600128] (robomaster_vision) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.601167] (-) TimerEvent: {}
+[0.623814] (robomaster_vision) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.653504] (robomaster_vision) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.659561] (robomaster_vision) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.701243] (-) TimerEvent: {}
+[0.752989] (robomaster_vision) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.753236] (robomaster_vision) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.801427] (-) TimerEvent: {}
+[0.855778] (robomaster_vision) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.856858] (robomaster_vision) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.881853] (robomaster_vision) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.899338] (robomaster_vision) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[0.899842] (robomaster_vision) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.901525] (-) TimerEvent: {}
+[0.935889] (robomaster_vision) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.947282] (robomaster_vision) StdoutLine: {'line': b'-- Generating done\n'}
+[0.951647] (robomaster_vision) StdoutLine: {'line': b'-- Build files have been written to: /home/lyl/robomaster/build/robomaster_vision\n'}
+[0.958021] (robomaster_vision) CommandEnded: {'returncode': 0}
+[0.958239] (robomaster_vision) JobProgress: {'identifier': 'robomaster_vision', 'progress': 'build'}
+[0.958908] (robomaster_vision) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lyl/robomaster/build/robomaster_vision', '--', '-j32', '-l32'], 'cwd': '/home/lyl/robomaster/build/robomaster_vision', 'env': OrderedDict([('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'lyl'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/local/cuda-12.2/lib64'), ('HOME', '/home/lyl'), ('OLDPWD', '/home/lyl'), ('LESS', '-R'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ZSH', '/home/lyl/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '2430'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('https_proxy', 'http://127.0.0.1:7897/'), ('ROS_DISTRO', 'humble'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lyl'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'lyl'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lyl/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lyl/.local/share/JetBrains/Toolbox/scripts:/usr/local/cuda-12.2/bin'), ('SESSION_MANAGER', 'local/lyl-Legion-Y9000P-IRX8:@/tmp/.ICE-unix/2403,unix/lyl-Legion-Y9000P-IRX8:/tmp/.ICE-unix/2403'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6adbe9f4_aa6e_4ef9_a6f2_411abd923a4a'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.168'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('CONDA_PYTHON_EXE', '/home/lyl/anaconda3/bin/python'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lyl/robomaster/build/robomaster_vision'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('_P9K_TTY', '/dev/pts/0'), ('CONDA_EXE', '/home/lyl/anaconda3/bin/conda'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.999945] (robomaster_vision) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/video_publisher.dir/src/video_publisher.cpp.o\x1b[0m\n'}
+[1.001577] (robomaster_vision) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/image_processor.dir/src/image_processor.cpp.o\x1b[0m\n'}
+[1.001754] (-) TimerEvent: {}
+[1.003661] (robomaster_vision) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/image_processor.dir/src/Armor.cpp.o\x1b[0m\n'}
+[1.004335] (robomaster_vision) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/image_processor.dir/src/Light.cpp.o\x1b[0m\n'}
+[1.004797] (robomaster_vision) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/image_processor.dir/src/KNN.cpp.o\x1b[0m\n'}
+[1.005447] (robomaster_vision) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/image_processor.dir/src/Judge_Light.cpp.o\x1b[0m\n'}
+[1.005675] (robomaster_vision) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o\x1b[0m\n'}
+[1.005811] (robomaster_vision) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/result_display.dir/src/result_display.cpp.o\x1b[0m\n'}
+[1.101931] (-) TimerEvent: {}
+[1.202302] (-) TimerEvent: {}
+[1.302693] (-) TimerEvent: {}
+[1.403130] (-) TimerEvent: {}
+[1.503497] (-) TimerEvent: {}
+[1.603871] (-) TimerEvent: {}
+[1.704246] (-) TimerEvent: {}
+[1.804640] (-) TimerEvent: {}
+[1.905036] (-) TimerEvent: {}
+[2.005427] (-) TimerEvent: {}
+[2.105863] (-) TimerEvent: {}
+[2.206231] (-) TimerEvent: {}
+[2.306621] (-) TimerEvent: {}
+[2.406985] (-) TimerEvent: {}
+[2.507400] (-) TimerEvent: {}
+[2.607703] (-) TimerEvent: {}
+[2.708049] (-) TimerEvent: {}
+[2.808382] (-) TimerEvent: {}
+[2.908658] (-) TimerEvent: {}
+[3.008976] (-) TimerEvent: {}
+[3.109280] (-) TimerEvent: {}
+[3.209563] (-) TimerEvent: {}
+[3.309854] (-) TimerEvent: {}
+[3.410147] (-) TimerEvent: {}
+[3.510460] (-) TimerEvent: {}
+[3.610776] (-) TimerEvent: {}
+[3.711107] (-) TimerEvent: {}
+[3.811412] (-) TimerEvent: {}
+[3.911866] (-) TimerEvent: {}
+[4.012262] (-) TimerEvent: {}
+[4.112702] (-) TimerEvent: {}
+[4.213022] (-) TimerEvent: {}
+[4.313297] (-) TimerEvent: {}
+[4.413566] (-) TimerEvent: {}
+[4.513834] (-) TimerEvent: {}
+[4.614116] (-) TimerEvent: {}
+[4.714445] (-) TimerEvent: {}
+[4.814769] (-) TimerEvent: {}
+[4.853585] (robomaster_vision) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable video_publisher\x1b[0m\n'}
+[4.914938] (-) TimerEvent: {}
+[5.015281] (-) TimerEvent: {}
+[5.115627] (-) TimerEvent: {}
+[5.185322] (robomaster_vision) StdoutLine: {'line': b'[ 75%] Built target video_publisher\n'}
+[5.215754] (-) TimerEvent: {}
+[5.316099] (-) TimerEvent: {}
+[5.416454] (-) TimerEvent: {}
+[5.516759] (-) TimerEvent: {}
+[5.617123] (-) TimerEvent: {}
+[5.717430] (-) TimerEvent: {}
+[5.817759] (-) TimerEvent: {}
+[5.918203] (-) TimerEvent: {}
+[6.018595] (-) TimerEvent: {}
+[6.118955] (-) TimerEvent: {}
+[6.153731] (robomaster_vision) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable predictor_node\x1b[0m\n'}
+[6.219102] (-) TimerEvent: {}
+[6.319397] (-) TimerEvent: {}
+[6.374927] (robomaster_vision) StdoutLine: {'line': b'[ 83%] Built target predictor_node\n'}
+[6.419546] (-) TimerEvent: {}
+[6.519920] (-) TimerEvent: {}
+[6.620250] (-) TimerEvent: {}
+[6.720601] (-) TimerEvent: {}
+[6.821003] (-) TimerEvent: {}
+[6.921353] (-) TimerEvent: {}
+[7.021692] (-) TimerEvent: {}
+[7.122079] (-) TimerEvent: {}
+[7.152521] (robomaster_vision) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX executable image_processor\x1b[0m\n'}
+[7.222180] (-) TimerEvent: {}
+[7.322508] (-) TimerEvent: {}
+[7.422799] (-) TimerEvent: {}
+[7.523162] (-) TimerEvent: {}
+[7.605602] (robomaster_vision) StdoutLine: {'line': b'[ 91%] Built target image_processor\n'}
+[7.623293] (-) TimerEvent: {}
+[7.723547] (-) TimerEvent: {}
+[7.823895] (-) TimerEvent: {}
+[7.924137] (-) TimerEvent: {}
+[8.024389] (-) TimerEvent: {}
+[8.124679] (-) TimerEvent: {}
+[8.224970] (-) TimerEvent: {}
+[8.273523] (robomaster_vision) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable result_display\x1b[0m\n'}
+[8.325146] (-) TimerEvent: {}
+[8.425456] (-) TimerEvent: {}
+[8.525703] (-) TimerEvent: {}
+[8.626034] (-) TimerEvent: {}
+[8.726269] (-) TimerEvent: {}
+[8.771250] (robomaster_vision) StdoutLine: {'line': b'[100%] Built target result_display\n'}
+[8.782781] (robomaster_vision) CommandEnded: {'returncode': 0}
+[8.783550] (robomaster_vision) JobProgress: {'identifier': 'robomaster_vision', 'progress': 'install'}
+[8.794234] (robomaster_vision) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lyl/robomaster/build/robomaster_vision'], 'cwd': '/home/lyl/robomaster/build/robomaster_vision', 'env': OrderedDict([('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'lyl'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/local/cuda-12.2/lib64'), ('HOME', '/home/lyl'), ('OLDPWD', '/home/lyl'), ('LESS', '-R'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ZSH', '/home/lyl/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '2430'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('https_proxy', 'http://127.0.0.1:7897/'), ('ROS_DISTRO', 'humble'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lyl'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'lyl'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lyl/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lyl/.local/share/JetBrains/Toolbox/scripts:/usr/local/cuda-12.2/bin'), ('SESSION_MANAGER', 'local/lyl-Legion-Y9000P-IRX8:@/tmp/.ICE-unix/2403,unix/lyl-Legion-Y9000P-IRX8:/tmp/.ICE-unix/2403'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6adbe9f4_aa6e_4ef9_a6f2_411abd923a4a'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.168'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('CONDA_PYTHON_EXE', '/home/lyl/anaconda3/bin/python'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lyl/robomaster/build/robomaster_vision'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('_P9K_TTY', '/dev/pts/0'), ('CONDA_EXE', '/home/lyl/anaconda3/bin/conda'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.802437] (robomaster_vision) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.802720] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/video_publisher\n'}
+[8.803850] (robomaster_vision) StdoutLine: {'line': b'-- Set runtime path of "/home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/video_publisher" to ""\n'}
+[8.804065] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/image_processor\n'}
+[8.806556] (robomaster_vision) StdoutLine: {'line': b'-- Set runtime path of "/home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/image_processor" to ""\n'}
+[8.806637] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/predictor_node\n'}
+[8.807970] (robomaster_vision) StdoutLine: {'line': b'-- Set runtime path of "/home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/predictor_node" to ""\n'}
+[8.808039] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/result_display\n'}
+[8.810389] (robomaster_vision) StdoutLine: {'line': b'-- Set runtime path of "/home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/result_display" to ""\n'}
+[8.810555] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/ament_index/resource_index/package_run_dependencies/robomaster_vision\n'}
+[8.810604] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/ament_index/resource_index/parent_prefix_path/robomaster_vision\n'}
+[8.810630] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/environment/ament_prefix_path.sh\n'}
+[8.810654] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/environment/ament_prefix_path.dsv\n'}
+[8.810688] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/environment/path.sh\n'}
+[8.810711] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/environment/path.dsv\n'}
+[8.810733] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/local_setup.bash\n'}
+[8.810767] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/local_setup.sh\n'}
+[8.810793] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/local_setup.zsh\n'}
+[8.810829] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/local_setup.dsv\n'}
+[8.810852] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/package.dsv\n'}
+[8.810991] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/ament_index/resource_index/packages/robomaster_vision\n'}
+[8.811082] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/cmake/robomaster_visionConfig.cmake\n'}
+[8.811111] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/cmake/robomaster_visionConfig-version.cmake\n'}
+[8.811135] (robomaster_vision) StdoutLine: {'line': b'-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/package.xml\n'}
+[8.812663] (robomaster_vision) CommandEnded: {'returncode': 0}
+[8.825770] (robomaster_vision) JobEnded: {'identifier': 'robomaster_vision', 'rc': 0}
+[8.826640] (-) TimerEvent: {}
+[8.826733] (-) EventReactorShutdown: {}

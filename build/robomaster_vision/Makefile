@@ -224,6 +224,19 @@ image_processor/fast:
 .PHONY : image_processor/fast
 
 #=============================================================================
+# Target rules for targets named predictor_node
+
+# Build rule for target.
+predictor_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 predictor_node
+.PHONY : predictor_node
+
+# fast build rule for target.
+predictor_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/predictor_node.dir/build.make CMakeFiles/predictor_node.dir/build
+.PHONY : predictor_node/fast
+
+#=============================================================================
 # Target rules for targets named result_display
 
 # Build rule for target.
@@ -356,6 +369,30 @@ src/image_processor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/src/image_processor.cpp.s
 .PHONY : src/image_processor.cpp.s
 
+src/predictor_node.o: src/predictor_node.cpp.o
+.PHONY : src/predictor_node.o
+
+# target to build an object file
+src/predictor_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/predictor_node.dir/build.make CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o
+.PHONY : src/predictor_node.cpp.o
+
+src/predictor_node.i: src/predictor_node.cpp.i
+.PHONY : src/predictor_node.i
+
+# target to preprocess a source file
+src/predictor_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/predictor_node.dir/build.make CMakeFiles/predictor_node.dir/src/predictor_node.cpp.i
+.PHONY : src/predictor_node.cpp.i
+
+src/predictor_node.s: src/predictor_node.cpp.s
+.PHONY : src/predictor_node.s
+
+# target to generate assembly for a file
+src/predictor_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/predictor_node.dir/build.make CMakeFiles/predictor_node.dir/src/predictor_node.cpp.s
+.PHONY : src/predictor_node.cpp.s
+
 src/result_display.o: src/result_display.cpp.o
 .PHONY : src/result_display.o
 
@@ -420,6 +457,7 @@ help:
 	@echo "... robomaster_vision_uninstall"
 	@echo "... uninstall"
 	@echo "... image_processor"
+	@echo "... predictor_node"
 	@echo "... result_display"
 	@echo "... video_publisher"
 	@echo "... src/Armor.o"
@@ -437,6 +475,9 @@ help:
 	@echo "... src/image_processor.o"
 	@echo "... src/image_processor.i"
 	@echo "... src/image_processor.s"
+	@echo "... src/predictor_node.o"
+	@echo "... src/predictor_node.i"
+	@echo "... src/predictor_node.s"
 	@echo "... src/result_display.o"
 	@echo "... src/result_display.i"
 	@echo "... src/result_display.s"

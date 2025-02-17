@@ -1,10 +1,13 @@
 #include "../include/robomaster_vision/KNN.h"
+#include "rclcpp/rclcpp.hpp" 
 
 
 // Function to load images and labels
 void loadDataset(const string& datasetPath, Mat& features, Mat& labels) {
     vector<Mat> images;
     vector<int> labelVec;
+
+    RCLCPP_INFO(rclcpp::get_logger("KNN"), "Checking dataset path: %s", datasetPath.c_str());
 
     for (const auto& entry : fs::directory_iterator(datasetPath)) {
         string filename = entry.path().filename().string();
@@ -13,19 +16,30 @@ void loadDataset(const string& datasetPath, Mat& features, Mat& labels) {
         if (filename.find(".png") != string::npos) {
             Mat img = imread(entry.path().string(), IMREAD_GRAYSCALE);
 
-            if (!img.empty() && img.size() == Size(200, 200)) {
-                images.push_back(img);
+            if (img.empty()) {
+                RCLCPP_WARN(rclcpp::get_logger("KNN"), "Failed to load image: %s", entry.path().string().c_str());
+                continue;
+            }
 
-                // Parse label from filename
-                if (filename.find("neg") != string::npos) {
-                    labelVec.push_back(10);  // Assign label 10 for negative samples
-                } else {
-                    int label = stoi(filename.substr(0, filename.find('_')));
-                    labelVec.push_back(label);
-                }
+            if (img.size() != Size(200, 200)) {
+                RCLCPP_WARN(rclcpp::get_logger("KNN"), "Invalid image size: %s, expected 200x200, got %d x %d",
+                            entry.path().string().c_str(), img.cols, img.rows);
+                continue;
+            }
+
+            images.push_back(img);
+
+            // Parse label from filename
+            if (filename.find("neg") != string::npos) {
+                labelVec.push_back(10);  // Assign label 10 for negative samples
+            } else {
+                int label = stoi(filename.substr(0, filename.find('_')));
+                labelVec.push_back(label);
             }
         }
     }
+
+    RCLCPP_INFO(rclcpp::get_logger("KNN"), "Loaded %ld valid images.", images.size());
 
     // Convert images to feature matrix
     features = Mat(images.size(), 200 * 200, CV_32F);
@@ -39,7 +53,12 @@ void loadDataset(const string& datasetPath, Mat& features, Mat& labels) {
     for (size_t i = 0; i < labelVec.size(); i++) {
         labels.at<int>(i, 0) = labelVec[i];
     }
+
+    if (features.empty() || labels.empty()) {
+        RCLCPP_ERROR(rclcpp::get_logger("KNN"), "❌ Error: No valid images found in %s", datasetPath.c_str());
+    }
 }
+
 
 // Train KNN model
 Ptr<KNearest> trainKNNFromDataset(const string& datasetPath) {

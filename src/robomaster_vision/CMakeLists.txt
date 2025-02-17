@@ -9,6 +9,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(cv_bridge REQUIRED)
+find_package(geometry_msgs REQUIRED) # 新增，支持 geometry_msgs::msg::Point 话题
 
 # 包含目录
 include_directories(
@@ -34,7 +35,15 @@ add_executable(image_processor
   src/Judge_Light.cpp
 )
 ament_target_dependencies(image_processor
-  rclcpp sensor_msgs std_msgs OpenCV cv_bridge
+  rclcpp sensor_msgs std_msgs OpenCV cv_bridge geometry_msgs
+)
+
+# predictor_node (新增预测节点)
+add_executable(predictor_node
+  src/predictor_node.cpp
+)
+ament_target_dependencies(predictor_node
+  rclcpp std_msgs geometry_msgs
 )
 
 # result_display
@@ -42,13 +51,14 @@ add_executable(result_display
   src/result_display.cpp
 )
 ament_target_dependencies(result_display
-  rclcpp sensor_msgs std_msgs OpenCV cv_bridge
+  rclcpp sensor_msgs std_msgs OpenCV cv_bridge geometry_msgs
 )
 
 # 安装生成的可执行文件
 install(TARGETS
   video_publisher
   image_processor
+  predictor_node  # 新增
   result_display
   DESTINATION lib/${PROJECT_NAME}
 )

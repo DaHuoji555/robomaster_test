@@ -746,5 +746,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/robomaster_vision_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/video_publisher.dir/DependInfo.cmake"
   "CMakeFiles/image_processor.dir/DependInfo.cmake"
+  "CMakeFiles/predictor_node.dir/DependInfo.cmake"
   "CMakeFiles/result_display.dir/DependInfo.cmake"
   )
