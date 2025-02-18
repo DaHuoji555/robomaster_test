@@ -49,11 +49,11 @@ vector<vector<Point2f>> Light::light_match(vector<Light>& lights, Mat& frame) {
                 leftPointsRight[1] = vertices1[1];
             }
 
-            // 计算 x 和 y 的差距
-            if (abs(rightPointsLeft[0].x - leftPointsRight[0].x) > 300 ||
-                abs(rightPointsLeft[0].y - leftPointsRight[0].y) > 300) {
-                continue; // 跳过当前配对
-            }
+           // 计算 x 和 y 的差距
+           if (abs((rightPointsLeft[0].x + rightPointsLeft[1].x) / 2 - (leftPointsRight[0].x + leftPointsRight[1].x) / 2 ) > 300 ||
+           abs((rightPointsLeft[0].y + rightPointsLeft[1].y) / 2 - (leftPointsRight[0].y + leftPointsRight[1].y) / 2 ) > 300) {
+           continue; // 跳过当前配对
+       }
 
             if (abs(light1.realArea - light2.realArea) > 200){
                 continue;

@@ -65,7 +65,7 @@ private:
         // === (B) 转为灰度图并二值化 ===
         cv::Mat gray, binary;
         cv::cvtColor(frame, gray, cv::COLOR_BGR2GRAY);
-        cv::threshold(gray, binary, 220, 255, cv::THRESH_BINARY);
+        cv::threshold(gray, binary, 240, 255, cv::THRESH_BINARY);
 
         // === (C) 形态学操作 (腐蚀 + 膨胀) ===
         cv::Mat erosionKernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(3, 3));

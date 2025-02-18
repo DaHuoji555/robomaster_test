@@ -21,15 +21,16 @@
        mappedPoints[3] = Point2f(200, 0);         // 右上角
    }
 
+   
 // 透射变换，将原始图像变换成 200x200 的矩阵
 Mat Armor::transformToMatrix(const Mat& frame) const {
-       // 深拷贝原图像
-       Mat imageCopy = frame.clone();
-       Mat grayImage;
-       cvtColor(imageCopy, grayImage, COLOR_BGR2GRAY);
+    // 深拷贝原图像
+    Mat imageCopy = frame.clone();
+    Mat grayImage;
+    cvtColor(imageCopy, grayImage, COLOR_BGR2GRAY);
 
-       // 如果像素值太大（白），直接变成 0
-       for (int i = 0; i < grayImage.rows; ++i) {
+    // 如果像素值太大（白），直接变成 0
+    for (int i = 0; i < grayImage.rows; ++i) {
         for (int j = 0; j < grayImage.cols; ++j) {
             if (grayImage.at<uchar>(i, j) > 240) {
                 grayImage.at<uchar>(i, j) = 0;
@@ -37,33 +38,36 @@ Mat Armor::transformToMatrix(const Mat& frame) const {
         }
     }
 
-    //    //二值化test1，3
-    //    Mat binaryImage;
-    //    threshold(grayImage, binaryImage, 20, 255, THRESH_BINARY);
+    // //二值化test1，3
+    // Mat binaryImage;
+    // threshold(grayImage, binaryImage, 20, 255, THRESH_BINARY);
 
-       //二值化test2
-        Mat binaryImage;
-        threshold(grayImage, binaryImage, 120, 255, THRESH_BINARY);
+    // 二值化处理test2
+    Mat binaryImage;
+    threshold(grayImage, binaryImage, 120, 255, THRESH_BINARY);
 
-       // 腐蚀操作，使用矩形核使白色变薄
-       Mat erodedImage;
-       Mat erosionKernel = getStructuringElement(MORPH_RECT, Size(3, 3)); // 使用 3x3 的矩形核
-       erode(binaryImage, erodedImage, erosionKernel);
-       erode(erodedImage, erodedImage, erosionKernel);
+    // 创建形态学操作的核
+    Mat morphKernel = getStructuringElement(MORPH_RECT, Size(3, 3)); // 使用 3x3 的矩形核
 
-       imageCopy = erodedImage.clone();
+    // 进行3次腐蚀，使白色区域收缩
+    Mat morphedImage = binaryImage.clone();
+    erode(morphedImage, morphedImage, morphKernel, Point(-1, -1), 3);
 
-       // 计算透射变换矩阵
-       Mat transformMatrix = getPerspectiveTransform(originalPoints, mappedPoints);
+    // 进行4次膨胀，使白色区域扩大
+    dilate(morphedImage, morphedImage, morphKernel, Point(-1, -1), 4);
 
-       // 执行透射变换
-       Mat result;
-       warpPerspective(imageCopy, result, transformMatrix, Size(200, 200));
-       imshow("Processed Result", result); // 显示结果
+    imageCopy = morphedImage.clone();
 
-       return result;
+    // 计算透射变换矩阵
+    Mat transformMatrix = getPerspectiveTransform(originalPoints, mappedPoints);
 
-   }
+    // 执行透射变换
+    Mat result;
+    warpPerspective(imageCopy, result, transformMatrix, Size(200, 200));
+    imshow("Processed Result", result); // 显示结果
+
+    return result;
+}
 
 
 // 对点进行排序，确保顺序为：左上、左下、右下、右上

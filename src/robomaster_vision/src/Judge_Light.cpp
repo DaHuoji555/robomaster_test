@@ -18,7 +18,7 @@ void filterAndAddLights(const vector<vector<Point>>& contours, vector<Light>& li
         if (width > height) std::swap(width, height);
 
         // 跳过长宽比不符合条件的轮廓
-        if (height / width < 2.0f) continue;
+        if (height / width < 1.5f) continue;
 
         // 获取旋转矩形的顶点
         Point2f vertices[4];
