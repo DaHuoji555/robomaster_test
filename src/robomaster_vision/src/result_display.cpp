@@ -17,7 +17,7 @@ public:
 
         // 初始化显示窗口
         cv::namedWindow("Result Display", cv::WINDOW_NORMAL);
-        cv::resizeWindow("Result Display", 640, 480);  // 设置窗口大小
+        cv::resizeWindow("Result Display", 1440, 1080);  // 设置窗口大小
 
         RCLCPP_INFO(this->get_logger(), "ResultDisplay node has started.");
     }

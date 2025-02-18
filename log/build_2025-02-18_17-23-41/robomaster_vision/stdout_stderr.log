@@ -1,0 +1,234 @@
+[35m[1mConsolidate compiler generated dependencies of target image_processor[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o[0m
+[ 25%] Built target video_publisher
+[ 41%] Built target result_display
+[ 91%] Built target image_processor
+In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/lyl/robomaster/src/robomaster_vision/src/predictor_node.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputArray::_InputArray(const cv::Mat&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:103:57:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  103 | inline _InputArray::_InputArray(const Mat& m) { init([01;35m[KMAT+ACCESS_READ[m[K, &m); }
+      |                                                      [01;35m[K~~~^~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputArray::_InputArray(const std::vector<cv::Mat>&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:104:83:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  104 | inline _InputArray::_InputArray(const std::vector<Mat>& vec) { init([01;35m[KSTD_VECTOR_MAT+ACCESS_READ[m[K, &vec); }
+      |                                                                     [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputArray::_InputArray(const cv::UMat&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:105:59:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  105 | inline _InputArray::_InputArray(const UMat& m) { init([01;35m[KUMAT+ACCESS_READ[m[K, &m); }
+      |                                                       [01;35m[K~~~~^~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputArray::_InputArray(const std::vector<cv::UMat>&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:106:85:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  106 | inline _InputArray::_InputArray(const std::vector<UMat>& vec) { init([01;35m[KSTD_VECTOR_UMAT+ACCESS_READ[m[K, &vec); }
+      |                                                                      [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputArray::_InputArray(const std::array<cv::Mat, _Nm>&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:118:22:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  118 | { init([01;35m[KSTD_ARRAY_MAT + ACCESS_READ[m[K, arr.data(), Size(1, _Nm)); }
+      |        [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputArray::_InputArray(const cv::cuda::GpuMat&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:148:21:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  148 | { init([01;35m[KCUDA_GPU_MAT + ACCESS_READ[m[K, &d_mat); }
+      |        [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputArray::_InputArray(const std::vector<cv::cuda::GpuMat>&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:151:38:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  151 | {       init([01;35m[KSTD_VECTOR_CUDA_GPU_MAT + ACCESS_READ[m[K, &d_mat);}
+      |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputArray::_InputArray(const cv::ogl::Buffer&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:154:22:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  154 | { init([01;35m[KOPENGL_BUFFER + ACCESS_READ[m[K, &buf); }
+      |        [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputArray::_InputArray(const cv::cuda::HostMem&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:157:22:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  157 | { init([01;35m[KCUDA_HOST_MEM + ACCESS_READ[m[K, &cuda_mem); }
+      |        [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_OutputArray::_OutputArray()[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:200:49:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  200 | inline _OutputArray::_OutputArray() { init([01;35m[KNONE + ACCESS_WRITE[m[K, 0); }
+      |                                            [01;35m[K~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_OutputArray::_OutputArray(cv::Mat&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:202:53:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  202 | inline _OutputArray::_OutputArray(Mat& m) { init([01;35m[KMAT+ACCESS_WRITE[m[K, &m); }
+      |                                                  [01;35m[K~~~^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_OutputArray::_OutputArray(std::vector<cv::Mat>&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:203:80:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  203 | inline _OutputArray::_OutputArray(std::vector<Mat>& vec) { init([01;35m[KSTD_VECTOR_MAT + ACCESS_WRITE[m[K, &vec); }
+      |                                                                 [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_OutputArray::_OutputArray(cv::UMat&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:204:56:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  204 | inline _OutputArray::_OutputArray(UMat& m) { init([01;35m[KUMAT + ACCESS_WRITE[m[K, &m); }
+      |                                                   [01;35m[K~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_OutputArray::_OutputArray(std::vector<cv::UMat>&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:205:82:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  205 | inline _OutputArray::_OutputArray(std::vector<UMat>& vec) { init([01;35m[KSTD_VECTOR_UMAT + ACCESS_WRITE[m[K, &vec); }
+      |                                                                  [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_OutputArray::_OutputArray(std::array<cv::Mat, _Nm>&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:217:22:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  217 | { init([01;35m[KSTD_ARRAY_MAT + ACCESS_WRITE[m[K, arr.data(), Size(1, _Nm)); }
+      |        [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_OutputArray::_OutputArray(cv::cuda::GpuMat&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:272:21:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  272 | { init([01;35m[KCUDA_GPU_MAT + ACCESS_WRITE[m[K, &d_mat); }
+      |        [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_OutputArray::_OutputArray(std::vector<cv::cuda::GpuMat>&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:275:38:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  275 | {       init([01;35m[KSTD_VECTOR_CUDA_GPU_MAT + ACCESS_WRITE[m[K, &d_mat);}
+      |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_OutputArray::_OutputArray(cv::ogl::Buffer&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:278:22:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  278 | { init([01;35m[KOPENGL_BUFFER + ACCESS_WRITE[m[K, &buf); }
+      |        [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_OutputArray::_OutputArray(cv::cuda::HostMem&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:281:22:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  281 | { init([01;35m[KCUDA_HOST_MEM + ACCESS_WRITE[m[K, &cuda_mem); }
+      |        [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputOutputArray::_InputOutputArray(cv::Mat&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:328:63:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  328 | inline _InputOutputArray::_InputOutputArray(Mat& m) { init([01;35m[KMAT+ACCESS_RW[m[K, &m); }
+      |                                                            [01;35m[K~~~^~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputOutputArray::_InputOutputArray(std::vector<cv::Mat>&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:329:89:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  329 | inline _InputOutputArray::_InputOutputArray(std::vector<Mat>& vec) { init([01;35m[KSTD_VECTOR_MAT+ACCESS_RW[m[K, &vec); }
+      |                                                                           [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputOutputArray::_InputOutputArray(cv::UMat&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:330:65:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  330 | inline _InputOutputArray::_InputOutputArray(UMat& m) { init([01;35m[KUMAT+ACCESS_RW[m[K, &m); }
+      |                                                             [01;35m[K~~~~^~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputOutputArray::_InputOutputArray(std::vector<cv::UMat>&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:331:91:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  331 | inline _InputOutputArray::_InputOutputArray(std::vector<UMat>& vec) { init([01;35m[KSTD_VECTOR_UMAT+ACCESS_RW[m[K, &vec); }
+      |                                                                            [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputOutputArray::_InputOutputArray(std::array<cv::Mat, _Nm>&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:343:22:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  343 | { init([01;35m[KSTD_ARRAY_MAT + ACCESS_RW[m[K, arr.data(), Size(1, _Nm)); }
+      |        [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputOutputArray::_InputOutputArray(cv::cuda::GpuMat&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:398:21:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  398 | { init([01;35m[KCUDA_GPU_MAT + ACCESS_RW[m[K, &d_mat); }
+      |        [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputOutputArray::_InputOutputArray(cv::ogl::Buffer&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:401:22:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  401 | { init([01;35m[KOPENGL_BUFFER + ACCESS_RW[m[K, &buf); }
+      |        [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:[m[K In constructor ‘[01m[Kcv::_InputOutputArray::_InputOutputArray(cv::cuda::HostMem&)[m[K’:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:404:22:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::_InputArray::KindFlag[m[K’ and ‘[01m[Kcv::AccessFlag[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  404 | { init([01;35m[KCUDA_HOST_MEM + ACCESS_RW[m[K, &cuda_mem); }
+      |        [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/highgui.hpp:51[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:68[m[K,
+                 from [01m[K/home/lyl/robomaster/src/robomaster_vision/src/predictor_node.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/videoio.hpp:[m[K At global scope:
+[01m[K/usr/include/opencv4/opencv2/videoio.hpp:293:80:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::<unnamed enum>[m[K’ and ‘[01m[Kcv::<unnamed enum>[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  293 | enum { CAP_OPENNI_IMAGE_GENERATOR_PRESENT         = [01;35m[KCAP_OPENNI_IMAGE_GENERATOR + CAP_PROP_OPENNI_GENERATOR_PRESENT[m[K,
+      |                                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/videoio.hpp:294:80:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::<unnamed enum>[m[K’ and ‘[01m[Kcv::<unnamed enum>[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  294 |        CAP_OPENNI_IMAGE_GENERATOR_OUTPUT_MODE     = [01;35m[KCAP_OPENNI_IMAGE_GENERATOR + CAP_PROP_OPENNI_OUTPUT_MODE[m[K,
+      |                                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/videoio.hpp:295:80:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::<unnamed enum>[m[K’ and ‘[01m[Kcv::<unnamed enum>[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  295 |        CAP_OPENNI_DEPTH_GENERATOR_PRESENT         = [01;35m[KCAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_GENERATOR_PRESENT[m[K,
+      |                                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/videoio.hpp:296:80:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::<unnamed enum>[m[K’ and ‘[01m[Kcv::<unnamed enum>[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  296 |        CAP_OPENNI_DEPTH_GENERATOR_BASELINE        = [01;35m[KCAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_BASELINE[m[K,
+      |                                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/videoio.hpp:297:80:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::<unnamed enum>[m[K’ and ‘[01m[Kcv::<unnamed enum>[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  297 |        CAP_OPENNI_DEPTH_GENERATOR_FOCAL_LENGTH    = [01;35m[KCAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_FOCAL_LENGTH[m[K,
+      |                                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/videoio.hpp:298:80:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::<unnamed enum>[m[K’ and ‘[01m[Kcv::<unnamed enum>[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  298 |        CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION    = [01;35m[KCAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_REGISTRATION[m[K,
+      |                                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/videoio.hpp:300:77:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::<unnamed enum>[m[K’ and ‘[01m[Kcv::<unnamed enum>[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  300 |        CAP_OPENNI_IR_GENERATOR_PRESENT            = [01;35m[KCAP_OPENNI_IR_GENERATOR + CAP_PROP_OPENNI_GENERATOR_PRESENT[m[K,
+      |                                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/lyl/robomaster/src/robomaster_vision/src/predictor_node.cpp:3[m[K:
+/usr/include/opencv4/opencv2/core/mat.inl.hpp: In instantiation of ‘[01m[Kcv::Mat::Mat(const cv::Matx<_Tp, m, n>&, bool) [with _Tp = double; int m = 2; int n = 3][m[K’:
+[01m[K/usr/include/opencv4/opencv2/imgproc.hpp:2484:64:[m[K   required from here
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:533:23:[m[K [01;35m[Kwarning: [m[Karithmetic between different enumeration types ‘[01m[Kcv::Mat::<unnamed enum>[m[K’ and ‘[01m[Kcv::traits::Type<double>::<unnamed enum>[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+  533 |     : flags([01;35m[KMAGIC_VAL + traits::Type<_Tp>::value[m[K + CV_MAT_CONT_FLAG), dims(2), rows(m), cols(n), data(0),
+      |             [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable predictor_node[0m
+/usr/bin/ld: CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: in function `PredictorNode::~PredictorNode()':
+predictor_node.cpp:(.text._ZN13PredictorNodeD2Ev[_ZN13PredictorNodeD5Ev]+0x3b): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeD2Ev[_ZN13PredictorNodeD5Ev]+0x47): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: in function `PredictorNode::~PredictorNode()':
+predictor_node.cpp:(.text._ZN13PredictorNodeD0Ev[_ZN13PredictorNodeD5Ev]+0x3b): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeD0Ev[_ZN13PredictorNodeD5Ev]+0x47): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: in function `PredictorNode::predict_position(std::shared_ptr<geometry_msgs::msg::Point_<std::allocator<void> > >)':
+predictor_node.cpp:(.text._ZN13PredictorNode16predict_positionESt10shared_ptrIN13geometry_msgs3msg6Point_ISaIvEEEE[_ZN13PredictorNode16predict_positionESt10shared_ptrIN13geometry_msgs3msg6Point_ISaIvEEEE]+0x21e): undefined reference to `cv::Mat::Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNode16predict_positionESt10shared_ptrIN13geometry_msgs3msg6Point_ISaIvEEEE[_ZN13PredictorNode16predict_positionESt10shared_ptrIN13geometry_msgs3msg6Point_ISaIvEEEE]+0x226): undefined reference to `cv::Mat::Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNode16predict_positionESt10shared_ptrIN13geometry_msgs3msg6Point_ISaIvEEEE[_ZN13PredictorNode16predict_positionESt10shared_ptrIN13geometry_msgs3msg6Point_ISaIvEEEE]+0x31c): undefined reference to `cv::solvePnP(cv::_InputArray const&, cv::_InputArray const&, cv::_InputArray const&, cv::_InputArray const&, cv::_OutputArray const&, cv::_OutputArray const&, bool, int)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNode16predict_positionESt10shared_ptrIN13geometry_msgs3msg6Point_ISaIvEEEE[_ZN13PredictorNode16predict_positionESt10shared_ptrIN13geometry_msgs3msg6Point_ISaIvEEEE]+0x39e): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNode16predict_positionESt10shared_ptrIN13geometry_msgs3msg6Point_ISaIvEEEE[_ZN13PredictorNode16predict_positionESt10shared_ptrIN13geometry_msgs3msg6Point_ISaIvEEEE]+0x3a6): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNode16predict_positionESt10shared_ptrIN13geometry_msgs3msg6Point_ISaIvEEEE[_ZN13PredictorNode16predict_positionESt10shared_ptrIN13geometry_msgs3msg6Point_ISaIvEEEE]+0xb9e): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNode16predict_positionESt10shared_ptrIN13geometry_msgs3msg6Point_ISaIvEEEE[_ZN13PredictorNode16predict_positionESt10shared_ptrIN13geometry_msgs3msg6Point_ISaIvEEEE]+0xba6): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: in function `PredictorNode::PredictorNode()':
+predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0xfd): undefined reference to `cv::Mat::Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x113): undefined reference to `cv::Mat::Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x765): undefined reference to `cv::Mat::Mat(int, int, int)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x7b7): undefined reference to `cv::Mat::empty() const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x7d6): undefined reference to `cv::Mat::total() const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x7f8): undefined reference to `cv::MatConstIterator::seek(int const*, bool)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x948): undefined reference to `cv::Mat::Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x964): undefined reference to `cv::Mat::empty() const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x99d): undefined reference to `cv::Mat::empty() const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x9e1): undefined reference to `cv::Mat::convertTo(cv::_OutputArray const&, int, double, double) const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x9f0): undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x9f8): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0xa07): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0xa1e): undefined reference to `cv::Mat::Mat(int, int, int)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0xa70): undefined reference to `cv::Mat::empty() const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0xa8f): undefined reference to `cv::Mat::total() const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0xaad): undefined reference to `cv::MatConstIterator::seek(int const*, bool)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0xb88): undefined reference to `cv::Mat::Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0xba4): undefined reference to `cv::Mat::empty() const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0xbdd): undefined reference to `cv::Mat::empty() const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0xc21): undefined reference to `cv::Mat::convertTo(cv::_OutputArray const&, int, double, double) const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0xc30): undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0xc38): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0xc44): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x10d9): undefined reference to `cv::MatConstIterator::seek(long, bool)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1129): undefined reference to `cv::MatConstIterator::seek(long, bool)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1179): undefined reference to `cv::MatConstIterator::seek(long, bool)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x11c5): undefined reference to `cv::MatConstIterator::seek(long, bool)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1241): undefined reference to `cv::MatConstIterator::seek(long, bool)'
+/usr/bin/ld: CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o:predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x126d): more undefined references to `cv::MatConstIterator::seek(long, bool)' follow
+/usr/bin/ld: CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: in function `PredictorNode::PredictorNode()':
+predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x150c): undefined reference to `cv::Mat::release()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1534): undefined reference to `cv::Mat::release()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x156b): undefined reference to `cv::Mat::reshape(int, int, int const*) const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1573): undefined reference to `cv::Mat::empty() const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x15da): undefined reference to `cv::Mat::convertTo(cv::_OutputArray const&, int, double, double) const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x15e2): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1603): undefined reference to `cv::Mat::reshape(int, int, int const*) const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x160b): undefined reference to `cv::Mat::empty() const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1672): undefined reference to `cv::Mat::convertTo(cv::_OutputArray const&, int, double, double) const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x167a): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1717): undefined reference to `cv::Mat::operator=(cv::Mat const&)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1727): undefined reference to `cv::Mat::operator=(cv::Mat const&)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1745): undefined reference to `cv::Mat::reshape(int, int, int const*) const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1750): undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1758): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1776): undefined reference to `cv::Mat::reshape(int, int, int const*) const'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1781): undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1789): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1796): undefined reference to `cv::Mat::release()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x17b7): undefined reference to `cv::Mat::release()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x17ed): undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x17fd): undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1837): undefined reference to `cv::error(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*, char const*, int)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1867): undefined reference to `cv::error(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*, char const*, int)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1897): undefined reference to `cv::error(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*, char const*, int)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x18c7): undefined reference to `cv::error(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*, char const*, int)'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1922): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x192a): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1932): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x193e): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1976): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: predictor_node.cpp:(.text._ZN13PredictorNodeC2Ev[_ZN13PredictorNodeC5Ev]+0x1982): undefined reference to `cv::Mat::~Mat()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/predictor_node.dir/build.make:167：predictor_node] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:195：CMakeFiles/predictor_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

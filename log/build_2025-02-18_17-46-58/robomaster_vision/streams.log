@@ -1,0 +1,34 @@
+[0.006s] Invoking command in '/home/lyl/robomaster/build/robomaster_vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lyl/robomaster/build/robomaster_vision -- -j32 -l32
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target predictor_node[0m
+[0.052s] [ 50%] Built target image_processor
+[0.053s] [ 66%] Built target video_publisher
+[0.056s] [ 83%] Built target result_display
+[0.059s] [ 91%] [32mBuilding CXX object CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o[0m
+[6.836s] [100%] [32m[1mLinking CXX executable predictor_node[0m
+[6.934s] [100%] Built target predictor_node
+[6.945s] Invoked command in '/home/lyl/robomaster/build/robomaster_vision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lyl/robomaster/build/robomaster_vision -- -j32 -l32
+[6.953s] Invoking command in '/home/lyl/robomaster/build/robomaster_vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lyl/robomaster/build/robomaster_vision
+[6.960s] -- Install configuration: "Release"
+[6.960s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/launch
+[6.960s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/launch/robomaster_launch.py
+[6.960s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/video_publisher
+[6.960s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/image_processor
+[6.960s] -- Installing: /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/predictor_node
+[6.961s] -- Set runtime path of "/home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/predictor_node" to ""
+[6.961s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/result_display
+[6.961s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/ament_index/resource_index/package_run_dependencies/robomaster_vision
+[6.962s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/ament_index/resource_index/parent_prefix_path/robomaster_vision
+[6.962s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/environment/ament_prefix_path.sh
+[6.962s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/environment/ament_prefix_path.dsv
+[6.962s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/environment/path.sh
+[6.962s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/environment/path.dsv
+[6.962s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/local_setup.bash
+[6.962s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/local_setup.sh
+[6.962s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/local_setup.zsh
+[6.962s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/local_setup.dsv
+[6.962s] -- Installing: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/package.dsv
+[6.962s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/ament_index/resource_index/packages/robomaster_vision
+[6.962s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/cmake/robomaster_visionConfig.cmake
+[6.962s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/cmake/robomaster_visionConfig-version.cmake
+[6.962s] -- Up-to-date: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/package.xml
+[6.963s] Invoked command in '/home/lyl/robomaster/build/robomaster_vision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lyl/robomaster/build/robomaster_vision

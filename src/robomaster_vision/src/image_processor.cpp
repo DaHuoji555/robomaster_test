@@ -65,7 +65,7 @@ private:
         // === (B) 转为灰度图并二值化 ===
         cv::Mat gray, binary;
         cv::cvtColor(frame, gray, cv::COLOR_BGR2GRAY);
-        cv::threshold(gray, binary, 240, 255, cv::THRESH_BINARY);
+        cv::threshold(gray, binary, 150, 255, cv::THRESH_BINARY);
 
         // === (C) 形态学操作 (腐蚀 + 膨胀) ===
         cv::Mat erosionKernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(3, 3));
@@ -75,6 +75,7 @@ private:
         cv::erode(binary, temp, erosionKernel, cv::Point(-1, -1), 2);
         cv::dilate(temp, morph, dilationKernel, cv::Point(-1, -1), 3);
 
+
         // === (D) 寻找轮廓并过滤成灯条 ===
         vector<vector<Point>> contours;
         vector<Vec4i> hierarchy;
@@ -82,6 +83,7 @@ private:
 
         vector<Light> lights;
         filterAndAddLights(contours, lights);
+        
 
         // === (E) 匹配灯条成装甲板 ===
         vector<vector<Point2f>> boards = Light::light_match(lights, frame);
@@ -102,17 +104,28 @@ private:
 
         // === (G) 绘制灯条信息 ===
         for (const auto& light : lights) {
+            // 绘制外接矩形
             Point2f vertices[4];
             light.rect.points(vertices);
             for (int j = 0; j < 4; j++) {
-                cv::line(frame, vertices[j], vertices[(j + 1) % 4], Scalar(0, 255, 0), 2);
+                line(frame, vertices[j], vertices[(j + 1) % 4], Scalar(0, 255, 0), 2); // 绿色边框
             }
-        }
+
+            // 显示灯条的外接矩形面积和真实面积
+            string areaText = format("Real: %.1f, Box: %.1f", light.realArea, light.boundingArea);
+            putText(frame, areaText, light.rect.center + Point2f(0, -10), FONT_HERSHEY_SIMPLEX, 0.5, Scalar(255, 255, 0), 1);
+
+            // 显示灯条的旋转角度
+            string angleText = format("Angle: %.1f", light.angle);
+            putText(frame, angleText, light.rect.center + Point2f(0, 10), FONT_HERSHEY_SIMPLEX, 0.5, Scalar(255, 0, 0), 1);
+    }
 
        // === (H) 绘制装甲板信息 ===
         double max_area = 0.0;  // 记录最大装甲板的面积
         Point2f max_center;      // 记录最大装甲板的中心点
         bool has_max_armor = false; // 记录是否找到最大装甲板
+
+    
 
         for (const auto& armor : armors) {
             // 计算四边形面积
@@ -178,5 +191,5 @@ int main(int argc, char **argv) {
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<ImageProcessor>());
     rclcpp::shutdown();
-    return 0;
+    return 0;   
 }

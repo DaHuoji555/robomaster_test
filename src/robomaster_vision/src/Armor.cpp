@@ -38,13 +38,13 @@ Mat Armor::transformToMatrix(const Mat& frame) const {
         }
     }
 
-    // //二值化test1，3
-    // Mat binaryImage;
-    // threshold(grayImage, binaryImage, 20, 255, THRESH_BINARY);
+    //二值化test1，3
+    Mat binaryImage;
+    threshold(grayImage, binaryImage, 20, 255, THRESH_BINARY);
 
     // 二值化处理test2
-    Mat binaryImage;
-    threshold(grayImage, binaryImage, 120, 255, THRESH_BINARY);
+    // Mat binaryImage;
+    // threshold(grayImage, binaryImage, 120, 255, THRESH_BINARY);
 
     // 创建形态学操作的核
     Mat morphKernel = getStructuringElement(MORPH_RECT, Size(3, 3)); // 使用 3x3 的矩形核

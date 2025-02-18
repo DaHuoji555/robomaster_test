@@ -11,7 +11,6 @@ find_package(OpenCV REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(geometry_msgs REQUIRED) # 新增，支持 geometry_msgs::msg::Point 话题
 
-
 # 包含目录
 include_directories(
   ${OpenCV_INCLUDE_DIRS}
@@ -24,6 +23,9 @@ add_executable(video_publisher
 )
 ament_target_dependencies(video_publisher
   rclcpp sensor_msgs cv_bridge OpenCV
+)
+target_link_libraries(video_publisher
+  ${OpenCV_LIBS}
 )
 
 # image_processor
@@ -38,13 +40,19 @@ add_executable(image_processor
 ament_target_dependencies(image_processor
   rclcpp sensor_msgs std_msgs OpenCV cv_bridge geometry_msgs
 )
+target_link_libraries(image_processor
+  ${OpenCV_LIBS}
+)
 
 # predictor_node (新增预测节点)
 add_executable(predictor_node
   src/predictor_node.cpp
 )
 ament_target_dependencies(predictor_node
-  rclcpp std_msgs geometry_msgs
+  rclcpp std_msgs geometry_msgs OpenCV cv_bridge
+)
+target_link_libraries(predictor_node
+  ${OpenCV_LIBS}
 )
 
 # result_display
@@ -53,6 +61,9 @@ add_executable(result_display
 )
 ament_target_dependencies(result_display
   rclcpp sensor_msgs std_msgs OpenCV cv_bridge geometry_msgs
+)
+target_link_libraries(result_display
+  ${OpenCV_LIBS}
 )
 
 # 安装 launch 文件
@@ -71,4 +82,3 @@ install(TARGETS
 )
 
 ament_package()
-

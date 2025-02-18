@@ -51,7 +51,7 @@ vector<vector<Point2f>> Light::light_match(vector<Light>& lights, Mat& frame) {
 
            // 计算 x 和 y 的差距
            if (abs((rightPointsLeft[0].x + rightPointsLeft[1].x) / 2 - (leftPointsRight[0].x + leftPointsRight[1].x) / 2 ) > 300 ||
-           abs((rightPointsLeft[0].y + rightPointsLeft[1].y) / 2 - (leftPointsRight[0].y + leftPointsRight[1].y) / 2 ) > 300) {
+           abs((rightPointsLeft[0].y + rightPointsLeft[1].y) / 2 - (leftPointsRight[0].y + leftPointsRight[1].y) / 2 ) > 30) {
            continue; // 跳过当前配对
        }
 
@@ -78,7 +78,7 @@ vector<vector<Point2f>> Light::light_match(vector<Light>& lights, Mat& frame) {
                                 sqrt(rightVector.x * rightVector.x + rightVector.y * rightVector.y));
 
             // 判断条件：向量积绝对值差近似为 0
-            if (abs(crossLeft - crossRight) < 0.1) { // 阈值可调
+            if (abs(crossLeft - crossRight) < 0.5) { // 阈值可调
 
                 // 上下延伸
                 float h1 = light1.height; // 左灯条的高度

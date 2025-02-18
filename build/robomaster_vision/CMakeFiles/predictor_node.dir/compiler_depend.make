@@ -733,8 +733,249 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /usr/include/opencv4/opencv2/opencv.hpp \
+  /usr/include/opencv4/opencv2/opencv_modules.hpp \
+  /usr/include/opencv4/opencv2/core.hpp \
+  /usr/include/opencv4/opencv2/core/cvdef.h \
+  /usr/include/opencv4/opencv2/core/version.hpp \
+  /usr/include/opencv4/opencv2/core/hal/interface.h \
+  /usr/include/c++/11/cstddef \
+  /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+  /usr/include/opencv4/opencv2/core/base.hpp \
+  /usr/include/opencv4/opencv2/core/cvstd.hpp \
+  /usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
+  /usr/include/opencv4/opencv2/core/neon_utils.hpp \
+  /usr/include/opencv4/opencv2/core/vsx_utils.hpp \
+  /usr/include/opencv4/opencv2/core/check.hpp \
+  /usr/include/opencv4/opencv2/core/traits.hpp \
+  /usr/include/opencv4/opencv2/core/matx.hpp \
+  /usr/include/opencv4/opencv2/core/saturate.hpp \
+  /usr/include/opencv4/opencv2/core/fast_math.hpp \
+  /usr/include/opencv4/opencv2/core/types.hpp \
+  /usr/include/c++/11/cfloat \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /usr/include/opencv4/opencv2/core/mat.hpp \
+  /usr/include/opencv4/opencv2/core/bufferpool.hpp \
+  /usr/include/opencv4/opencv2/core/mat.inl.hpp \
+  /usr/include/opencv4/opencv2/core/persistence.hpp \
+  /usr/include/opencv4/opencv2/core/operations.hpp \
+  /usr/include/opencv4/opencv2/core/cvstd.inl.hpp \
+  /usr/include/c++/11/complex \
+  /usr/include/opencv4/opencv2/core/utility.hpp \
+  /usr/include/opencv4/opencv2/core/optim.hpp \
+  /usr/include/opencv4/opencv2/core/ovx.hpp \
+  /usr/include/opencv4/opencv2/core/cvdef.h \
+  /usr/include/opencv4/opencv2/calib3d.hpp \
+  /usr/include/opencv4/opencv2/features2d.hpp \
+  /usr/include/opencv4/opencv2/flann/miniflann.hpp \
+  /usr/include/opencv4/opencv2/flann/defines.h \
+  /usr/include/opencv4/opencv2/flann/config.h \
+  /usr/include/opencv4/opencv2/core/affine.hpp \
+  /usr/include/opencv4/opencv2/dnn.hpp \
+  /usr/include/opencv4/opencv2/dnn/dnn.hpp \
+  /usr/include/opencv4/opencv2/core/async.hpp \
+  /usr/include/opencv4/opencv2/dnn/version.hpp \
+  /usr/include/opencv4/opencv2/dnn/dict.hpp \
+  /usr/include/opencv4/opencv2/dnn/layer.hpp \
+  /usr/include/opencv4/opencv2/dnn/dnn.inl.hpp \
+  /usr/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
+  /usr/include/opencv4/opencv2/dnn/dnn.hpp \
+  /usr/include/opencv4/opencv2/flann.hpp \
+  /usr/include/opencv4/opencv2/flann/flann_base.hpp \
+  /usr/include/opencv4/opencv2/flann/general.h \
+  /usr/include/opencv4/opencv2/flann/matrix.h \
+  /usr/include/opencv4/opencv2/flann/params.h \
+  /usr/include/opencv4/opencv2/flann/any.h \
+  /usr/include/opencv4/opencv2/flann/defines.h \
+  /usr/include/opencv4/opencv2/flann/saving.h \
+  /usr/include/opencv4/opencv2/flann/nn_index.h \
+  /usr/include/opencv4/opencv2/flann/result_set.h \
+  /usr/include/opencv4/opencv2/flann/all_indices.h \
+  /usr/include/opencv4/opencv2/flann/kdtree_index.h \
+  /usr/include/opencv4/opencv2/flann/dynamic_bitset.h \
+  /usr/include/opencv4/opencv2/flann/dist.h \
+  /usr/include/opencv4/opencv2/flann/heap.h \
+  /usr/include/opencv4/opencv2/flann/allocator.h \
+  /usr/include/opencv4/opencv2/flann/random.h \
+  /usr/include/opencv4/opencv2/flann/kdtree_single_index.h \
+  /usr/include/opencv4/opencv2/flann/kmeans_index.h \
+  /usr/include/opencv4/opencv2/flann/logger.h \
+  /usr/include/opencv4/opencv2/flann/composite_index.h \
+  /usr/include/opencv4/opencv2/flann/linear_index.h \
+  /usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
+  /usr/include/opencv4/opencv2/flann/lsh_index.h \
+  /usr/include/opencv4/opencv2/flann/lsh_table.h \
+  /usr/include/c++/11/math.h \
+  /usr/include/opencv4/opencv2/flann/autotuned_index.h \
+  /usr/include/opencv4/opencv2/flann/ground_truth.h \
+  /usr/include/opencv4/opencv2/flann/index_testing.h \
+  /usr/include/opencv4/opencv2/flann/timer.h \
+  /usr/include/opencv4/opencv2/flann/sampling.h \
+  /usr/include/opencv4/opencv2/highgui.hpp \
+  /usr/include/opencv4/opencv2/imgcodecs.hpp \
+  /usr/include/opencv4/opencv2/videoio.hpp \
+  /usr/include/opencv4/opencv2/imgproc.hpp \
+  /usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
+  /usr/include/opencv4/opencv2/ml.hpp \
+  /usr/include/opencv4/opencv2/ml/ml.inl.hpp \
+  /usr/include/opencv4/opencv2/objdetect.hpp \
+  /usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp \
+  /usr/include/opencv4/opencv2/objdetect/face.hpp \
+  /usr/include/opencv4/opencv2/photo.hpp \
+  /usr/include/opencv4/opencv2/stitching.hpp \
+  /usr/include/opencv4/opencv2/stitching/warpers.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+  /usr/include/opencv4/opencv2/core/cuda.hpp \
+  /usr/include/opencv4/opencv2/core/cuda_types.hpp \
+  /usr/include/opencv4/opencv2/core/cuda.inl.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/util.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_queue.h \
+  /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/blenders.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
+  /usr/include/opencv4/opencv2/video.hpp \
+  /usr/include/opencv4/opencv2/video/tracking.hpp \
+  /usr/include/opencv4/opencv2/video/background_segm.hpp
 
+
+/usr/include/opencv4/opencv2/video/background_segm.hpp:
+
+/usr/include/opencv4/opencv2/video/tracking.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp:
+
+/usr/include/c++/11/bits/stl_queue.h:
+
+/usr/include/c++/11/bits/deque.tcc:
+
+/usr/include/c++/11/bits/stl_deque.h:
+
+/usr/include/c++/11/deque:
+
+/usr/include/c++/11/queue:
+
+/usr/include/opencv4/opencv2/stitching/detail/util.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/matchers.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp:
+
+/usr/include/opencv4/opencv2/core/cuda.hpp:
+
+/usr/include/opencv4/opencv2/stitching.hpp:
+
+/usr/include/opencv4/opencv2/objdetect/face.hpp:
+
+/usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp:
+
+/usr/include/opencv4/opencv2/ml/ml.inl.hpp:
+
+/usr/include/opencv4/opencv2/imgproc/segmentation.hpp:
+
+/usr/include/opencv4/opencv2/videoio.hpp:
+
+/usr/include/opencv4/opencv2/imgcodecs.hpp:
+
+/usr/include/opencv4/opencv2/highgui.hpp:
+
+/usr/include/opencv4/opencv2/flann/sampling.h:
+
+/usr/include/opencv4/opencv2/flann/index_testing.h:
+
+/usr/include/opencv4/opencv2/flann/linear_index.h:
+
+/usr/include/opencv4/opencv2/flann/logger.h:
+
+/usr/include/opencv4/opencv2/flann/kdtree_single_index.h:
+
+/usr/include/opencv4/opencv2/flann/heap.h:
+
+/usr/include/opencv4/opencv2/flann/all_indices.h:
+
+/usr/include/opencv4/opencv2/flann/saving.h:
+
+/usr/include/opencv4/opencv2/flann/any.h:
+
+/usr/include/opencv4/opencv2/flann/matrix.h:
+
+/usr/include/opencv4/opencv2/flann.hpp:
+
+/usr/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
+
+/usr/include/opencv4/opencv2/dnn/dnn.inl.hpp:
+
+/usr/include/opencv4/opencv2/dnn/layer.hpp:
+
+/usr/include/opencv4/opencv2/dnn/dict.hpp:
+
+/usr/include/opencv4/opencv2/dnn/version.hpp:
+
+/usr/include/opencv4/opencv2/core/async.hpp:
+
+/usr/include/opencv4/opencv2/dnn/dnn.hpp:
+
+/usr/include/opencv4/opencv2/core/affine.hpp:
+
+/usr/include/opencv4/opencv2/flann/config.h:
+
+/usr/include/opencv4/opencv2/flann/defines.h:
+
+/usr/include/opencv4/opencv2/features2d.hpp:
+
+/usr/include/opencv4/opencv2/core/optim.hpp:
+
+/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:
+
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:
+
+/usr/include/opencv4/opencv2/core/mat.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
+
+/usr/include/c++/11/cfloat:
+
+/usr/include/opencv4/opencv2/core/matx.hpp:
+
+/usr/include/opencv4/opencv2/core/traits.hpp:
+
+/usr/include/opencv4/opencv2/core/vsx_utils.hpp:
+
+/usr/include/opencv4/opencv2/core/neon_utils.hpp:
+
+/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
+
+/usr/include/opencv4/opencv2/core/cvstd.hpp:
+
+/usr/include/opencv4/opencv2/core/base.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
+
+/usr/include/c++/11/cstddef:
+
+/usr/include/opencv4/opencv2/core.hpp:
+
+/usr/include/opencv4/opencv2/opencv.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -747,6 +988,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
+
+/usr/include/opencv4/opencv2/core/utility.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result_kind.hpp:
 
@@ -783,6 +1026,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
+
+/usr/include/opencv4/opencv2/opencv_modules.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
 
@@ -828,6 +1073,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
 
+/usr/include/opencv4/opencv2/ml.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
@@ -852,6 +1099,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
 
+/usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h:
+
 /opt/ros/humble/include/rcutils/rcutils/shared_library.h:
 
 /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp:
@@ -860,7 +1109,11 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
+/usr/include/opencv4/opencv2/core/types.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
+
+/usr/include/opencv4/opencv2/flann/kmeans_index.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
 
@@ -875,6 +1128,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
+
+/usr/include/opencv4/opencv2/photo.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
 
@@ -898,9 +1153,13 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:
 
+/usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
 
 /opt/ros/humble/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/blenders.hpp:
 
 /usr/include/c++/11/pstl/glue_numeric_defs.h:
 
@@ -946,6 +1205,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
+/usr/include/c++/11/complex:
+
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/qos_parameters.hpp:
@@ -975,6 +1236,10 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp:
+
+/usr/include/opencv4/opencv2/flann/dist.h:
+
+/usr/include/opencv4/opencv2/core/persistence.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
 
@@ -1066,6 +1331,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/stdio.h:
 
+/usr/include/opencv4/opencv2/stitching/detail/warpers.hpp:
+
 /usr/include/c++/11/cstdio:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
@@ -1112,9 +1379,13 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
+/usr/include/opencv4/opencv2/flann/params.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/opencv4/opencv2/core/cuda_types.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
 
@@ -1152,6 +1423,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
+/usr/include/opencv4/opencv2/stitching/detail/camera.hpp:
+
 /usr/include/c++/11/bits/locale_classes.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
@@ -1184,6 +1457,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
+/usr/include/opencv4/opencv2/flann/miniflann.hpp:
+
 /usr/include/c++/11/ext/alloc_traits.h:
 
 /usr/include/c++/11/ext/concurrence.h:
@@ -1193,6 +1468,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
 
 /usr/include/c++/11/bits/ios_base.h:
+
+/usr/include/opencv4/opencv2/flann/lsh_table.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
@@ -1205,6 +1482,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /usr/include/c++/11/cctype:
 
 /usr/include/c++/11/iomanip:
+
+/usr/include/opencv4/opencv2/flann/lsh_index.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
@@ -1220,9 +1499,13 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/asm-generic/errno-base.h:
 
+/usr/include/opencv4/opencv2/flann/general.h:
+
 /opt/ros/humble/include/rmw/rmw/subscription_options.h:
 
 /usr/include/c++/11/bits/nested_exception.h:
+
+/usr/include/opencv4/opencv2/flann/dynamic_bitset.h:
 
 /opt/ros/humble/include/rmw/rmw/publisher_options.h:
 
@@ -1231,6 +1514,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h:
 
 /usr/include/c++/11/typeinfo:
+
+/usr/include/opencv4/opencv2/flann/kdtree_index.h:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
@@ -1286,6 +1571,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:
 
+/usr/include/opencv4/opencv2/flann/nn_index.h:
+
 /usr/include/c++/11/bits/basic_string.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
@@ -1318,6 +1605,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
+/usr/include/opencv4/opencv2/core/check.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
@@ -1330,11 +1619,15 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
+
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
+
+/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:
 
 /usr/include/c++/11/iosfwd:
 
@@ -1362,6 +1655,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
+/usr/include/opencv4/opencv2/flann/allocator.h:
+
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
@@ -1373,6 +1668,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
 
 /usr/include/features.h:
+
+/usr/include/opencv4/opencv2/core/cuda.inl.hpp:
 
 /usr/include/c++/11/bits/atomic_base.h:
 
@@ -1434,6 +1731,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/c++/11/cstdlib:
 
+/usr/include/opencv4/opencv2/flann/result_set.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/string_map.h:
@@ -1443,6 +1742,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /usr/include/c++/11/bits/shared_ptr_base.h:
 
 /usr/include/linux/limits.h:
+
+/usr/include/opencv4/opencv2/core/ovx.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
@@ -1455,6 +1756,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp:
 
 /opt/ros/humble/include/rmw/rmw/time.h:
+
+/usr/include/opencv4/opencv2/core/operations.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
@@ -1506,6 +1809,10 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
+/usr/include/opencv4/opencv2/dnn.hpp:
+
+/usr/include/opencv4/opencv2/core/hal/interface.h:
+
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
@@ -1537,6 +1844,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /usr/include/c++/11/bits/stl_function.h:
 
 /usr/include/c++/11/bits/memoryfwd.h:
+
+/usr/include/opencv4/opencv2/core/saturate.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
 
@@ -1576,7 +1885,13 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/c++/11/climits:
 
+/usr/include/opencv4/opencv2/core/cvdef.h:
+
 /usr/include/c++/11/bits/sstream.tcc:
+
+/usr/include/opencv4/opencv2/flann/autotuned_index.h:
+
+/usr/include/opencv4/opencv2/flann/random.h:
 
 /usr/include/c++/11/array:
 
@@ -1591,6 +1906,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/opencv4/opencv2/flann/flann_base.hpp:
 
 /usr/include/math.h:
 
@@ -1621,6 +1938,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /usr/include/c++/11/bits/functexcept.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/opencv4/opencv2/stitching/warpers.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
@@ -1656,6 +1975,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/c++/11/bits/string_view.tcc:
 
+/usr/include/opencv4/opencv2/core/fast_math.hpp:
+
 /usr/include/locale.h:
 
 /usr/include/c++/11/numbers:
@@ -1686,6 +2007,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
 
+/usr/include/opencv4/opencv2/core/version.hpp:
+
 /usr/include/x86_64-linux-gnu/asm/unistd_64.h:
 
 /usr/include/c++/11/sstream:
@@ -1698,6 +2021,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/c++/11/backward/auto_ptr.h:
 
+/usr/include/opencv4/opencv2/flann/ground_truth.h:
+
 /usr/include/c++/11/bits/stream_iterator.h:
 
 /opt/ros/humble/include/rmw/rmw/macros.h:
@@ -1707,6 +2032,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /opt/ros/humble/include/rmw/rmw/ret_types.h:
 
 /usr/include/c++/11/bits/uses_allocator_args.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
 
 /usr/include/c++/11/list:
 
@@ -1723,6 +2050,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
+
+/usr/include/opencv4/opencv2/calib3d.hpp:
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
@@ -1744,6 +2073,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/c++/11/set:
 
+/usr/include/opencv4/opencv2/objdetect.hpp:
+
 /usr/include/c++/11/bits/node_handle.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
@@ -1759,6 +2090,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/opencv4/opencv2/imgproc.hpp:
 
 /usr/include/c++/11/bits/unordered_map.h:
 
@@ -1818,6 +2151,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
 
+/usr/include/c++/11/math.h:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
@@ -1833,6 +2168,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /usr/include/c++/11/type_traits:
 
 /opt/ros/humble/include/rmw/rmw/visibility_control.h:
+
+/usr/include/opencv4/opencv2/flann/timer.h:
 
 /opt/ros/humble/include/rcl/rcl/log_level.h:
 
@@ -1950,6 +2287,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /opt/ros/humble/include/rcl/rcl/node.h:
 
+/usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
+
 /opt/ros/humble/include/rcl/rcl/node_options.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:
@@ -1975,6 +2314,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
+
+/usr/include/opencv4/opencv2/core/bufferpool.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__struct.hpp:
 
@@ -2090,6 +2431,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
+/usr/include/opencv4/opencv2/flann/composite_index.h:
+
 /usr/include/c++/11/bits/basic_ios.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
@@ -2175,6 +2518,8 @@ CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o: /home/lyl/robomaster/src
 /opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
+
+/usr/include/opencv4/opencv2/video.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp:
 
