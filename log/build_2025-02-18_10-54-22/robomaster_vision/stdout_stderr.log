@@ -35,13 +35,17 @@
 -- Generating done
 -- Build files have been written to: /home/lyl/robomaster/build/robomaster_vision
 [  8%] [32mBuilding CXX object CMakeFiles/video_publisher.dir/src/video_publisher.cpp.o[0m
-[ 16%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/image_processor.cpp.o[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/Armor.cpp.o[0m
-[ 33%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/Light.cpp.o[0m
-[ 41%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/KNN.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/Judge_Light.cpp.o[0m
-[ 58%] [32mBuilding CXX object CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/result_display.dir/src/result_display.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/KNN.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/Judge_Light.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/predictor_node.dir/src/predictor_node.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/Light.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/image_processor.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/result_display.dir/src/result_display.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/image_processor.dir/src/Armor.cpp.o[0m
+[01m[K/home/lyl/robomaster/src/robomaster_vision/src/image_processor.cpp:[m[K In constructor ‘[01m[KImageProcessor::ImageProcessor()[m[K’:
+[01m[K/home/lyl/robomaster/src/robomaster_vision/src/image_processor.cpp:30:15:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kchar* getcwd(char*, size_t)[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+   30 |         [01;35m[Kgetcwd(cwd, sizeof(cwd))[m[K;
+      |         [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~[m[K
 [ 75%] [32m[1mLinking CXX executable video_publisher[0m
 [ 75%] Built target video_publisher
 [ 83%] [32m[1mLinking CXX executable predictor_node[0m
@@ -50,7 +54,9 @@
 [ 91%] Built target image_processor
 [100%] [32m[1mLinking CXX executable result_display[0m
 [100%] Built target result_display
--- Install configuration: ""
+-- Install configuration: "Release"
+-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/launch
+-- Installing: /home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/launch/robomaster_launch.py
 -- Installing: /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/video_publisher
 -- Set runtime path of "/home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/video_publisher" to ""
 -- Installing: /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/image_processor

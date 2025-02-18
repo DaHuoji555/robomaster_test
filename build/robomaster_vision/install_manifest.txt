@@ -1,3 +1,4 @@
+/home/lyl/robomaster/install/robomaster_vision/share/robomaster_vision/launch/robomaster_launch.py
 /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/video_publisher
 /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/image_processor
 /home/lyl/robomaster/install/robomaster_vision/lib/robomaster_vision/predictor_node

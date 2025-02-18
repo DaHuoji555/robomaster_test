@@ -1,6 +1,0 @@
-Invoking command in '/home/lyl/robomaster/build/robomaster_vision': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lyl/robomaster/src/robomaster_vision -DCMAKE_INSTALL_PREFIX=/home/lyl/robomaster/install/robomaster_vision
-Invoked command in '/home/lyl/robomaster/build/robomaster_vision' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lyl/robomaster/src/robomaster_vision -DCMAKE_INSTALL_PREFIX=/home/lyl/robomaster/install/robomaster_vision
-Invoking command in '/home/lyl/robomaster/build/robomaster_vision': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lyl/robomaster/build/robomaster_vision -- -j32 -l32
-Invoked command in '/home/lyl/robomaster/build/robomaster_vision' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lyl/robomaster/build/robomaster_vision -- -j32 -l32
-Invoking command in '/home/lyl/robomaster/build/robomaster_vision': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lyl/robomaster/build/robomaster_vision
-Invoked command in '/home/lyl/robomaster/build/robomaster_vision' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lyl/robomaster/build/robomaster_vision

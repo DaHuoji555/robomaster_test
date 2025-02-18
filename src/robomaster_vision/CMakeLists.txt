@@ -11,6 +11,7 @@ find_package(OpenCV REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(geometry_msgs REQUIRED) # 新增，支持 geometry_msgs::msg::Point 话题
 
+
 # 包含目录
 include_directories(
   ${OpenCV_INCLUDE_DIRS}
@@ -54,6 +55,12 @@ ament_target_dependencies(result_display
   rclcpp sensor_msgs std_msgs OpenCV cv_bridge geometry_msgs
 )
 
+# 安装 launch 文件
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}
+)
+
 # 安装生成的可执行文件
 install(TARGETS
   video_publisher
@@ -64,3 +71,4 @@ install(TARGETS
 )
 
 ament_package()
+

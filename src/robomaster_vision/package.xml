@@ -16,6 +16,8 @@
   <depend>cv_bridge</depend>
   <depend>OpenCV</depend>
   <depend>geometry_msgs</depend>
+  <depend>launch</depend>  <!-- 新增 launch 依赖 -->
+  <depend>launch_ros</depend>  <!-- 新增 launch_ros 依赖 -->
 
   <!-- 可选：如果要使用 C++14/17/20，或者其他库 -->
   <!--
